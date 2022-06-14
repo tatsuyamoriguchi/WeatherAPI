@@ -24,14 +24,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
      
-        let urlString = "\(endPoint)&q=\(zipCode)&api=no"
+        zipCodeLabel.text = String(zipCode)
 
+        let urlString = "\(endPoint)&q=\(zipCode)&api=no"
         getData(url: urlString)
         
-        zipCodeLabel.text = String(zipCode)
-        
     }
-
 
 }
 
