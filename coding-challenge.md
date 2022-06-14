@@ -1,6 +1,6 @@
-# Umo Coding Challenge
+# ABC Coding Challenge
 ​
-Thank you for your interest in working on the **Umo** team! Below is a coding challenge we will use to evaluate your skills and see how well we would work together as a team. Please complete the following requirements, writing code that you would be comfortable submitting to a collaborative enterprise application codebase. The app does not have to have a beautiful UI but must be functional as per the requirements. We will discuss the code with you so be prepared to justify your architectural and stylistic choices.
+Thank you for your interest in working on the **ABC** team! Below is a coding challenge we will use to evaluate your skills and see how well we would work together as a team. Please complete the following requirements, writing code that you would be comfortable submitting to a collaborative enterprise application codebase. The app does not have to have a beautiful UI but must be functional as per the requirements. We will discuss the code with you so be prepared to justify your architectural and stylistic choices.
 ​
 ​
 # WeatherZip
