@@ -102,16 +102,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XC-n1-N2Y">
+                                <rect key="frame" x="35" y="44" width="70" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="FBr-2X-ckj"/>
+                                    <constraint firstAttribute="width" constant="70" id="Fot-3h-WCH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip Code" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSD-6b-Qlu">
+                                <rect key="frame" x="235" y="44" width="143" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="2Ff-0B-TdY"/>
+                                    <constraint firstAttribute="height" constant="22" id="Kv3-TE-r0z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="495-NB-e6u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="1B2-L9-Yer"/>
-                            <constraint firstItem="Ak1-s8-VXf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="2t4-Ga-uOw"/>
+                            <constraint firstItem="495-NB-e6u" firstAttribute="top" secondItem="5XC-n1-N2Y" secondAttribute="bottom" constant="17" id="0Ut-TQ-d8o"/>
+                            <constraint firstItem="5XC-n1-N2Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0kJ-ia-dxo"/>
                             <constraint firstItem="tWd-dQ-0ra" firstAttribute="top" secondItem="uHA-Rl-3jN" secondAttribute="bottom" constant="35" id="4Uv-dW-S1w"/>
+                            <constraint firstItem="bSD-6b-Qlu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5rz-ne-fdb"/>
+                            <constraint firstItem="Ak1-s8-VXf" firstAttribute="top" secondItem="bSD-6b-Qlu" secondAttribute="bottom" constant="13" id="6Hv-EN-NI4"/>
                             <constraint firstItem="9wy-RI-FLY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="149" id="BvY-vj-cZM"/>
                             <constraint firstItem="Ak1-s8-VXf" firstAttribute="leading" secondItem="495-NB-e6u" secondAttribute="trailing" constant="170" id="Eju-VO-Apq"/>
                             <constraint firstItem="6Nn-ZI-3ZZ" firstAttribute="top" secondItem="495-NB-e6u" secondAttribute="bottom" constant="43" id="H3U-Mp-1T5"/>
+                            <constraint firstItem="bSD-6b-Qlu" firstAttribute="leading" secondItem="5XC-n1-N2Y" secondAttribute="trailing" constant="130" id="Kez-so-jWk"/>
                             <constraint firstItem="Jor-Pd-vY3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="O2T-55-XYC"/>
                             <constraint firstItem="7zj-ti-kEM" firstAttribute="top" secondItem="tWd-dQ-0ra" secondAttribute="bottom" constant="35" id="Q3n-BW-hiV"/>
                             <constraint firstItem="5N1-RQ-5X8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="dnu-rL-ptA"/>
@@ -123,6 +146,7 @@
                             <constraint firstItem="495-NB-e6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="spj-el-Lh4"/>
                             <constraint firstItem="7zj-ti-kEM" firstAttribute="leading" secondItem="5N1-RQ-5X8" secondAttribute="trailing" constant="22" id="uys-Lj-qZh"/>
                             <constraint firstItem="tWd-dQ-0ra" firstAttribute="leading" secondItem="9wy-RI-FLY" secondAttribute="trailing" constant="7" id="vt7-EA-jZX"/>
+                            <constraint firstItem="5XC-n1-N2Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="wm2-Ub-EHc"/>
                             <constraint firstItem="5N1-RQ-5X8" firstAttribute="top" secondItem="9wy-RI-FLY" secondAttribute="bottom" constant="22" id="xyd-sB-3aK"/>
                         </constraints>
                     </view>
@@ -132,6 +156,7 @@
                         <outlet property="currentWeatherLabel" destination="tWd-dQ-0ra" id="VLa-lg-Lxk"/>
                         <outlet property="iconImageView" destination="9wy-RI-FLY" id="r7p-AV-6lg"/>
                         <outlet property="stateLabel" destination="uHA-Rl-3jN" id="S5A-kt-Fik"/>
+                        <outlet property="zipCodeLabel" destination="bSD-6b-Qlu" id="QFC-yp-GOl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentTemeratureLabel: UILabel!
     @IBOutlet weak var currentWeatherLabel: UILabel!
     @IBOutlet weak var iconImageView: UIImageView!
-    
+    @IBOutlet weak var zipCodeLabel: UILabel!
     
     let endPoint = "https://api.weatherapi.com/v1/current.json?key=cb4f89b62a41411fb44184017221206"
     
@@ -23,11 +23,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+     
         let urlString = "\(endPoint)&q=\(zipCode)&api=no"
 
         getData(url: urlString)
         
+        zipCodeLabel.text = String(zipCode)
         
     }
 
