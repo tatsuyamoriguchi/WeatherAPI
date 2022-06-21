@@ -17,11 +17,3 @@ The above data can all be provided by **Weather API**. You will have to [sign up
 
 Please use native Swift with UIKit and not SwiftUI, as most code our team will be working on cannot use SwiftUI at this time.
 
-
-
-Feedback from a reviewer
-•    The network layer was put in an extension of the ViewController, instead of being separated or abstracted. This detracts from the testability of the data processing
-•    The network layer extension was named GetAPICall, which does not reflect a naming convention that could keep things organized as the projects grows in size
-•    There was some messiness in the project, like a reference in the project file to the deleted View folder, resulting in a red folder in the project hierarchy, and commented out code left in
-•    The constraints were not configured in a localization-friendly manner. If the language changed the text could be shrunk or truncated, and any changes that needed to be made to the view would have resulted in having to do all the constraints from scratch.
-•    If the iconURL was malformed at all from the server, it would have resulted in a crash due to a force unwrap on line 52
