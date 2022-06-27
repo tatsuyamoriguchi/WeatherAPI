@@ -29,17 +29,6 @@ extension ViewController {
                     
                     let result = try JSONDecoder().decode(WeatherData.self, from: data!)
                     
-                    print(result.location.name)
-                    print(result.location.region)
-                    print(result.location.country)
-                    print(result.location.localtime)
-                    
-                    print(result.current.temp_c)
-                    print(result.current.temp_f)
-                    print(result.current.condition.code)
-                    print(result.current.condition.text)
-                    print(result.current.condition.icon)
-                    
                     DispatchQueue.main.async {
                         self.cityNameLabel.text = result.location.name
                         self.stateLabel.text = result.location.region
@@ -48,8 +37,11 @@ extension ViewController {
                         
                         let iconString = "https:" + result.current.condition.icon
                         print("iconString: \(iconString)")
-                        let iconURL = URL(string: iconString)
-                        if let imageData = NSData(contentsOf: iconURL! as URL)  {
+                        guard let iconURL = URL(string: iconString) else {
+                            print("iconURL error")
+                            return
+                        }
+                        if let imageData = NSData(contentsOf: iconURL as URL)  {
                             DispatchQueue.main.async {
                                 self.iconImageView.image = UIImage(data: imageData as Data)
                             }
