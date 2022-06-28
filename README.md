@@ -18,3 +18,9 @@ well as details of the current weather for that zip code. The details will inclu
 The above data can all be provided by **Weather API**. You will have to [sign up](https://www.weatherapi.com/signup.aspx) for a free account to use it. You're free to use a different API service if you'd like as long as it can satisfy the above requirements.
 
 Please use native Swift with UIKit and not SwiftUI, as most code our team will be working on cannot use SwiftUI at this time.
+
+
+
+https://user-images.githubusercontent.com/25876806/176091383-d69826e3-79f8-4784-bee8-330afbd2362d.mov
+
+
