@@ -151,12 +151,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cityNameLabel" destination="Ak1-s8-VXf" id="eZa-O4-jn6"/>
-                        <outlet property="currentTemeratureLabel" destination="7zj-ti-kEM" id="aYE-by-Ge0"/>
-                        <outlet property="currentWeatherLabel" destination="tWd-dQ-0ra" id="VLa-lg-Lxk"/>
-                        <outlet property="iconImageView" destination="9wy-RI-FLY" id="r7p-AV-6lg"/>
-                        <outlet property="stateLabel" destination="uHA-Rl-3jN" id="S5A-kt-Fik"/>
-                        <outlet property="zipCodeLabel" destination="bSD-6b-Qlu" id="QFC-yp-GOl"/>
+                        <outlet property="cityNameLabel" destination="Ak1-s8-VXf" id="Ejd-TE-jaU"/>
+                        <outlet property="currentTemeratureLabel" destination="7zj-ti-kEM" id="7nW-oX-jhi"/>
+                        <outlet property="currentWeatherLabel" destination="tWd-dQ-0ra" id="Fsn-go-K5C"/>
+                        <outlet property="iconImageView" destination="9wy-RI-FLY" id="fdj-7V-4fJ"/>
+                        <outlet property="stateLabel" destination="uHA-Rl-3jN" id="1qw-h6-lGx"/>
+                        <outlet property="zipCodeLabel" destination="bSD-6b-Qlu" id="uPj-BY-4UL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

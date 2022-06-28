@@ -1,5 +1,5 @@
 //
-//  GetAPICall.swift
+//  WeatherService.swift
 //  WeatherAPI
 //
 //  Created by Tatsuya Moriguchi on 6/13/22.
@@ -9,11 +9,9 @@ import Foundation
 import UIKit
 
 
-extension ViewController {
+class WeatherService {
     
-    
-    
-    func getData(url: String) {
+    func getData(url: String, onCompletion: @escaping (WeatherData) -> ()) {
         
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "GET"
@@ -30,33 +28,18 @@ extension ViewController {
                     let result = try JSONDecoder().decode(WeatherData.self, from: data!)
                     
                     DispatchQueue.main.async {
-                        self.cityNameLabel.text = result.location.name
-                        self.stateLabel.text = result.location.region
-                        self.currentWeatherLabel.text = result.current.condition.text
-                        self.currentTemeratureLabel.text = String(result.current.temp_f)
-                        
-                        let iconString = "https:" + result.current.condition.icon
-                        print("iconString: \(iconString)")
-                        guard let iconURL = URL(string: iconString) else {
-                            print("iconURL error")
-                            return
-                        }
-                        if let imageData = NSData(contentsOf: iconURL as URL)  {
-                            DispatchQueue.main.async {
-                                self.iconImageView.image = UIImage(data: imageData as Data)
-                            }
-                        }
+                        onCompletion(result)
                         
                     }
+                    
                 } catch {
                     print("error: \(error)")
                 }
+
             }
         })
         task.resume()
-        
     }
-    
 }
 
 /*

@@ -21,8 +21,8 @@ struct Location: Codable {
 }
 
 struct Current: Codable {
-    let temp_c: Double
-    let temp_f: Double
+    let temp_c: Double?
+    let temp_f: Double?
     let condition: Condition
 }
 
